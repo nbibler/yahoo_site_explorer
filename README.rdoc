@@ -2,6 +2,26 @@
 
 The Yahoo! Site Explorer service provides access to Yahoo!'s information about web pages.  The service stores information about links between web pages and and can gauge the popularity of a given page.
 
+== Installation
+
+To install, simply:
+
+    gem install site-explorer
+
+
+== Example
+
+The following example queries Yahoo! Site Explorer for the number of inlinks (backlinks) for www.google.com:
+
+    require 'yahoo_site_explorer'
+    
+    service = YahooSiteExplorer.new('myapikey')
+    results = service.backlinks('http://www.google.com')
+    puts results.total_results
+
+== Caveats
+
+Currently, this library only implements the inlinksData, totalResultsAvailable, as that is the only data I need.  I'll extend this to fully support the API, shortly.
 
 == Copyright
 

@@ -9,7 +9,7 @@ begin
     gem.email = "gem@nathanielbibler.com"
     gem.homepage = "http://github.com/nbibler/yahoo_site_explorer"
     gem.authors = ["Nathaniel Bibler"]
-    gem.rubyforge_project = "yahoo_site_explorer"
+    gem.rubyforge_project = "site-explorer"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 
