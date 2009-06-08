@@ -1,7 +1,10 @@
-= yahoo_site_explorer
+= Yahoo! Site Explorer
 
-Description goes here.
+The Yahoo! Site Explorer service provides access to Yahoo!'s information about web pages.  The service stores information about links between web pages and and can gauge the popularity of a given page.
+
 
 == Copyright
+
+Yahoo! Site Explorer is owned, operated, and copyrighted (c) by Yahoo Inc.
 
 Copyright (c) 2009 Nathaniel Bibler. See LICENSE for details.
