@@ -25,7 +25,8 @@ Gem::Specification.new do |s|
      "test/integrations/yahoo_site_explorer_test.rb",
      "test/mocks/inlink_data.rb",
      "test/test_helper.rb",
-     "test/units/inlink_data_test.rb"
+     "test/units/inlink_data_test.rb",
+     "yahoo_site_explorer.gemspec"
   ]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/nbibler/yahoo_site_explorer}
