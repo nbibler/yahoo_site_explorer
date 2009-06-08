@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "yahoo_site_explorer"
-    gem.summary = %Q{TODO}
+    gem.summary = %Q{Ruby interface to the Yahoo! Site Explorer REST API}
     gem.email = "gem@nathanielbibler.com"
     gem.homepage = "http://github.com/nbibler/yahoo_site_explorer"
     gem.authors = ["Nathaniel Bibler"]
