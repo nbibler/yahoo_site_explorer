@@ -1,0 +1,7 @@
+= yahoo_site_explorer
+
+Description goes here.
+
+== Copyright
+
+Copyright (c) 2009 Nathaniel Bibler. See LICENSE for details.
