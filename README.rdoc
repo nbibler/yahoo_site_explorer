@@ -17,7 +17,7 @@ The following example queries Yahoo! Site Explorer for the number of inlinks (ba
     
     service = YahooSiteExplorer.new('myapikey')
     results = service.backlinks('http://www.google.com')
-    puts results.total_results
+    puts results.total_results #=> 941822
 
 == Caveats
 

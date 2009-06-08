@@ -10,7 +10,13 @@ begin
     gem.homepage = "http://github.com/nbibler/yahoo_site_explorer"
     gem.authors = ["Nathaniel Bibler"]
     gem.rubyforge_project = "site-explorer"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    
+    gem.add_dependency('relax', '~> 0.1.1')
+    
+    gem.add_development_dependency('jeweler', '~> 0.11.0')
+    gem.add_development_dependency('mocha', '~> 0.9.5')
+    gem.add_development_dependency('thoughtbot-shoulda', '~> 2.10.1')
+    gem.add_development_dependency('fakeweb', '~> 1.2.2')
   end
 
   Jeweler::RubyforgeTasks.new
