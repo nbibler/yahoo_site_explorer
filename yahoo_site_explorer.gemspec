@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{yahoo_site_explorer}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Nathaniel Bibler"]
-  s.date = %q{2009-06-08}
+  s.date = %q{2009-06-09}
   s.email = %q{gem@nathanielbibler.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -18,14 +18,19 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "Rakefile",
-     "VERSION",
+     "VERSION.yml",
      "lib/yahoo_site_explorer.rb",
      "lib/yahoo_site_explorer/api.rb",
      "lib/yahoo_site_explorer/backlinks.rb",
+     "lib/yahoo_site_explorer/page_data.rb",
+     "lib/yahoo_site_explorer/result.rb",
+     "lib/yahoo_site_explorer/results_container.rb",
      "test/integrations/yahoo_site_explorer_test.rb",
      "test/mocks/inlink_data.rb",
+     "test/mocks/page_data.rb",
      "test/test_helper.rb",
      "test/units/inlink_data_test.rb",
+     "test/units/page_data_test.rb",
      "yahoo_site_explorer.gemspec"
   ]
   s.has_rdoc = true
@@ -38,8 +43,10 @@ Gem::Specification.new do |s|
   s.test_files = [
     "test/integrations/yahoo_site_explorer_test.rb",
      "test/mocks/inlink_data.rb",
+     "test/mocks/page_data.rb",
      "test/test_helper.rb",
-     "test/units/inlink_data_test.rb"
+     "test/units/inlink_data_test.rb",
+     "test/units/page_data_test.rb"
   ]
 
   if s.respond_to? :specification_version then
