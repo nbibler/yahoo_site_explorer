@@ -1,8 +1,8 @@
 = Yahoo! Site Explorer
 
-The Yahoo! Site Explorer service provides access to Yahoo!'s information about web pages.  The service stores information about links between web pages and and can gauge the popularity of a given page.
+The {Yahoo! Site Explorer}[http://siteexplorer.search.yahoo.com/] service provides access to Yahoo!'s information about web pages.  The service stores information about links between web pages and and can gauge the popularity of a given page.
 
-The Site Explorer APIs are limited to 5,000 queries per IP address per day and to noncommercial use. See information on {rate limiting}[http://developer.yahoo.com/search/rate.html].
+The {Site Explorer APIs}[http://developer.yahoo.com/search/siteexplorer/] are limited to 5,000 queries per IP address per day and to noncommercial use. See information on {rate limiting}[http://developer.yahoo.com/search/rate.html].
 
 == Installation
 
