@@ -15,7 +15,7 @@ class YahooSiteExplorer
   
   def backlinks(url, options = {})
     options[:query] ||= url
-    Backlinks.new(api.inlink_data(options))
+    Backlinks.new(options[:query], api.inlink_data(options))
   end
   
   

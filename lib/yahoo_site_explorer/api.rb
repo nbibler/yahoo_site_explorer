@@ -18,7 +18,14 @@ class YahooSiteExplorer
         parameter :callback
         
         parser 'ResultSet' do
-          element :total_results, :attribute => 'totalResultsAvailable', :xpath => './/@totalResultsAvailable'
+          element :total_results_available, :attribute => 'totalResultsAvailable',  :xpath => './/@totalResultsAvailable'
+          element :first_result_position,   :attribute => 'firstResultPosition',    :xpath => './/@firstResultPosition'
+          element :total_results_returned,  :attribute => 'totalResultsReturned',   :xpath => './/@totalResultsReturned'
+          elements 'Result',                :as => :results do
+            element 'Title',                :as => :title
+            element 'Url',                  :as => :url
+            element 'ClickUrl',             :as => :click_url
+          end
         end
       end
       

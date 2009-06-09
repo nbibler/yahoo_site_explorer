@@ -13,12 +13,12 @@ To install, simply:
 
 == Example
 
-The following example queries Yahoo! Site Explorer for the number of inlinks (backlinks) for www.google.com:
+The following example queries Yahoo! Site Explorer for the number of inlinks (backlinks) for www.yahoo.com:
 
     require 'yahoo_site_explorer'
     
     service = YahooSiteExplorer.new('myapikey')
-    results = service.backlinks('http://www.google.com')
+    results = service.backlinks('http://www.yahoo.com')
     puts results.total_results #=> 941822
 
 == Caveats
