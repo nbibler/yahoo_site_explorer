@@ -13,17 +13,43 @@ To install, simply:
 
 == Example
 
-The following example queries Yahoo! Site Explorer for the number of inlinks (backlinks) for www.yahoo.com:
+The following example queries Yahoo! Site Explorer for backlinks (inlink data) information about 'http://www.yahoo.com':
 
     require 'yahoo_site_explorer'
     
-    service = YahooSiteExplorer.new('myapikey')
-    results = service.backlinks('http://www.yahoo.com')
-    puts results.total_results #=> 941822
+    service   = YahooSiteExplorer.new('1234--MyAPIKeyHere=abcd--')
+    backlinks = service.backlinks('http://www.yahoo.com')
+    
+    puts backlinks.total_results_available  #=> 941822
+    puts backlinks.results.first.title      #=> HTML page title
+    puts backlinks.results.first.url        #=> HTML page title
+    puts backlinks.results.first.click_url  #=> HTML page title
+    
+    # Uses a cursor, requeries Yahoo! as necessary, and steps through all
+    # results.
+    backlinks.each do |link|
+      puts link.title
+    end
 
-== Caveats
+== Supported Services
 
-Currently, this library only implements the inlinksData, totalResultsAvailable, as that is the only data I need.  I'll extend this to fully support the API, shortly.
+This library supports the following endpoints for the Yahoo! Site Explorer web service:
+
+Inlink Data::
+  Shows the pages from other sites linking in to a page.
+
+Page Data::
+  Shows a list of all pages belonging to a domain in the Yahoo! index.
+
+=== Unsupported Services
+
+The following endpoints are not currently supported by this library:
+
+Ping::
+  Allows you to notify Yahoo! of changes to your site.
+
+Update Notification::
+  Allows you to notify Yahoo! of changes to your site.
 
 == Copyright
 

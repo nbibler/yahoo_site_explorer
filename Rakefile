@@ -58,7 +58,8 @@ Rake::RDocTask.new do |rdoc|
 
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "yahoo_site_explorer #{version}"
-  rdoc.rdoc_files.include('README*')
+  rdoc.main = 'README.rdoc'
+  rdoc.rdoc_files.include('README*', 'LICENSE*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 

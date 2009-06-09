@@ -20,7 +20,7 @@ class YahooSiteExplorer
   # 
   # === Example
   # 
-  #     yahoo_site_explorer.backlinks('http://www.yahoo.com')
+  #     yahoo_site_explorer.backlinks('http://www.yahoo.com', :results => 50)
   # 
   # === Options
   # 
@@ -61,7 +61,7 @@ class YahooSiteExplorer
   # 
   # === Example
   # 
-  #     yahoo_site_explorer.page_data('http://www.yahoo.com')
+  #     yahoo_site_explorer.page_data('http://www.yahoo.com', :results => 50)
   # 
   # === Options
   # 
