@@ -19,7 +19,9 @@ begin
     gem.add_development_dependency('fakeweb', '~> 1.2.2')
   end
 
-  Jeweler::RubyforgeTasks.new
+  Jeweler::RubyforgeTasks.new do |task|
+    task.remote_doc_path = ''
+  end
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
 end

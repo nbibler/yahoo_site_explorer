@@ -21,9 +21,9 @@ The following example queries Yahoo! Site Explorer for backlinks (inlink data) i
     backlinks = service.backlinks('http://www.yahoo.com')
     
     puts backlinks.total_results_available  #=> 941822
-    puts backlinks.results.first.title      #=> HTML page title
-    puts backlinks.results.first.url        #=> HTML page title
-    puts backlinks.results.first.click_url  #=> HTML page title
+    puts backlinks.results.first.title      #=> 'HTML page title'
+    puts backlinks.results.first.url        #=> 'http://www.example.com/'
+    puts backlinks.results.first.click_url  #=> 'http://www.example.com/'
     
     # Uses a cursor, requeries Yahoo! as necessary, and steps through all
     # results.
